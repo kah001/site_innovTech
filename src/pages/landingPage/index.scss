@@ -1,0 +1,67 @@
+.pagina-landingpage {
+    main {
+        background-color: #C95624;
+
+        #inicio {
+            text-align: center;
+            display: flex;
+            background-color: #000;
+            justify-content: space-evenly;
+
+            img {
+                width: 400px;
+                height: 350px;
+                margin: 10px;
+                box-shadow: #C95624 10px 10px;
+            }
+
+            .texto {
+                margin: 10px 20px 100px 30px;
+                padding: 10px;
+            }
+
+ 
+            h1 {
+                font-size: 50px;
+                color: #C95624;
+            }
+            p {
+                font-size: 30px;
+                color: #fff;
+            }
+        }
+
+        #sobre {
+            text-align: center;
+            padding: 30px 10px 40px 10px;
+
+            p {
+                font-size: 20px;
+            }
+        }
+
+        #vantagens {
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            gap: 30px;
+
+            .bloco{
+                padding: 10px;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 150px;
+                }
+                h3 {
+                    padding: 5px;
+                }
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

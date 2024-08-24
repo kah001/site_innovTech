@@ -1,0 +1,22 @@
+.comp-cabecalho {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    gap: 500px;
+    
+    img {
+        width: 150px;
+        margin-left: 20px;
+    }
+
+    .topicos {
+        display: flex;
+        gap: 50px;
+    }
+
+    a {
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+    }
+}
