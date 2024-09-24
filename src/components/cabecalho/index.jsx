@@ -9,6 +9,7 @@ export default function Cabecalho(props) {
                 <a href='#inicio'>INÍCIO</a>
                 <a href='#sobre'>SOBRE</a>
                 <a href='#vantagens'>VANTAGENS</a>
+                <a href="#equipe">EQUIPE</a>
             </div>
         </div>
     )

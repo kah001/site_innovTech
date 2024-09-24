@@ -3,10 +3,23 @@
     background-color: #000;
     color: #fff;
     padding: 15px;
+    justify-content: space-around;
 
     .info {
         img {
             width: 200px;
+        }
+    }
+
+    .paginas {
+        display: block;
+        flex-direction: column;
+
+        a {
+            font-size: 20px;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
         }
     }
 
@@ -20,6 +33,7 @@
                 margin: 10px;
             }
         }
+
         .email {
             align-items: center;
             display: flex;
