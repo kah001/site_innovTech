@@ -1,6 +1,6 @@
 import './index.scss'
 
-export default function Cabecalho(props) {
+export default function Cabecalho() {
     return (
         <div className='comp-cabecalho'>
             <img src="/assets/images/innovTech.png" alt="" />

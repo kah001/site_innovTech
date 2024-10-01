@@ -15,7 +15,6 @@ export default function Rodape() {
                 <a href="#equipe">EQUIPE</a>
             </div>
 
-
             <div className='contato'>
             
                 <div className='telefone'>
@@ -39,6 +38,7 @@ export default function Rodape() {
                 </div>
 
             </div>
+
         </div>
     )
 }
