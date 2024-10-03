@@ -1,98 +1,113 @@
 .comp-rodape {
-    display: flex;
     background-color: #000;
     color: #fff;
-    padding: 50px 10px;
-    justify-content: space-around;
 
-    .info {
-        img {
-            width: 200px;
-            margin: 15px;
-        }
-    }
-
-    .paginas {
+    .rodape {
         display: flex;
-        width: 80px;
-        flex-wrap: wrap;
+        padding: 50px 10px;
+        justify-content: space-around;
 
-        a {
-            font-size: 20px;
-            color: #fff;
-            text-decoration: none;
-            padding: 5px;
+        .info {
+            img {
+                width: 200px;
+                margin: 15px;
+            }
+        }
+
+        .paginas {
+            display: flex;
+            width: 80px;
+            flex-wrap: wrap;
+
+            a {
+                font-size: 20px;
+                color: #fff;
+                text-decoration: none;
+                padding: 5px;
+            }
+        }
+
+        .contato {
+            .telefone {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 60px;
+                    margin: 10px;
+                }
+            }
+
+            .email {
+                align-items: center;
+                display: flex;
+
+                img {
+                    width: 60px;
+                    margin: 10px;
+                }
+            }
         }
     }
 
-    .contato {
-        .telefone {
-            display: flex;
-            align-items: center;
+    .final {
+        display: flex;
+        flex-direction: column;
 
-            img {
-                width: 60px;
-                margin: 10px;
-            }
-        }
-
-        .email {
-            align-items: center;
-            display: flex;
-
-            img {
-                width: 60px;
-                margin: 10px;
-            }
+        p {
+            padding: 10px;
         }
     }
 }
 
 @media (max-width: 580px) {
-    .comp-rodape {
-        flex-wrap: wrap;
-        padding: 25px 10px;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        justify-content: start;
+    .comp-rodape {}
 
-        .info {
-            img {
-                width: 200px;
-            }
-        }
 
-        .contato {
-            padding: 0px 40px;
+    @media (max-width: 768px) {
+        .comp-rodape {
+            .rodape {
+                flex-wrap: wrap;
+                padding: 25px 10px;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                justify-content: start;
 
-            .email {
-                img {
-                    width: 50px;
-                }
                 .info {
-                    h2 {
-                        font-size: 20px;
+                    img {
+                        width: 200px;
+                    }
+                }
+
+                .contato {
+                    padding: 0px 40px;
+
+                    .email {
+                        img {
+                            width: 50px;
+                        }
+
+                        .info {
+                            h2 {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+
+                    .telefone {
+                        img {
+                            width: 50px;
+                        }
+
+                        .info {
+                            h2 {
+                                font-size: 20px;
+                            }
+                        }
                     }
                 }
             }
-            .telefone {
-                img {
-                    width: 50px;
-                }
-                .info {
-                    h2 {
-                        font-size: 20px;
-                    }
-                }
-            }
         }
-    }
-}
-
-
-@media (max-width: 768px) {
-    .comp-rodape {
-        
     }
 }

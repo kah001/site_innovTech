@@ -4,6 +4,7 @@ export default function Rodape() {
     return (
         <div className='comp-rodape'>
 
+            <div className='rodape'>
             <div className='info'>
                 <img src="/assets/images/innovTech.png" alt="" />
             </div>
@@ -16,7 +17,7 @@ export default function Rodape() {
             </div>
 
             <div className='contato'>
-            
+
                 <div className='telefone'>
                     <img src="/assets/images/whatsapp.png" alt="" />
 
@@ -37,6 +38,14 @@ export default function Rodape() {
 
                 </div>
 
+            </div>
+            
+        </div>
+
+
+            <div className='final'>
+                <hr />
+                <p>&copy; 2024</p>
             </div>
 
         </div>
