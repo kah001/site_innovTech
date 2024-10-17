@@ -9,7 +9,7 @@
         margin-left: 20px;
     }
 
-    .topicos {
+    .nav {
         display: flex;
         gap: 50px;
     }
@@ -18,5 +18,60 @@
         color: #fff;
         font-size: 20px;
         text-decoration: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .comp-cabecalho {
+        .nav {
+            display: none;
+        }
+        .nav.open {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            background-color: #C95624;
+            width: 50%;
+            height: 100%;
+            gap: 30px;
+            padding: 10px;
+            box-shadow: 5px 5px 35px 0px;
+            padding: 85px 5px;
+
+            a {
+                padding: 10px;
+            }
+            a:hover{
+                background-color: #e66f3c;
+            }
+        }
+        .menu-icon {
+            cursor: pointer;
+
+            .menu {
+                padding: 5px;
+                width: 65px;
+                border-radius: 10px;
+                background-color: #C95624;
+                margin: 10px;
+            }
+            .menu.toggle {
+                transform: rotate(45deg);
+                position: absolute;
+                position: fixed;
+                top: 30px;
+                right: 10px;
+                background-color: #000;
+            }
+            .menu.toggle:nth-child(2) {
+                opacity: 0;
+            }
+            .menu.toggle:nth-child(3) {
+                transform: rotate(-45deg);
+            }
+        }
     }
 }
