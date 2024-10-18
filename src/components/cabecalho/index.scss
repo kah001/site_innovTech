@@ -50,14 +50,18 @@
         }
         .menu-icon {
             cursor: pointer;
+            padding: 10px;
+            background-color: #C95624;
+            border-radius: 5px;
 
             .menu {
-                padding: 5px;
-                width: 65px;
+                padding: 3px;
+                width: 45px;
                 border-radius: 10px;
-                background-color: #C95624;
-                margin: 10px;
+                background-color: #fff;
+                margin: 8px;
             }
+
             .menu.toggle {
                 transform: rotate(45deg);
                 position: absolute;
@@ -72,6 +76,9 @@
             .menu.toggle:nth-child(3) {
                 transform: rotate(-45deg);
             }
+        }
+        .menu-icon:hover {
+            text-transform: uppercase;
         }
     }
 }
