@@ -61,52 +61,59 @@
 }
 
 @media (max-width: 580px) {
-    .comp-rodape {}
+    .comp-rodape {
+        .rodape {
+            .info {
+                img {
 
+                }
+            }
 
-    @media (max-width: 768px) {
-        .comp-rodape {
-            .rodape {
-                flex-wrap: wrap;
-                padding: 25px 10px;
-                justify-content: center;
-                align-items: center;
-                gap: 20px;
-                justify-content: start;
+            .paginas {
 
-                .info {
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .comp-rodape {
+        .rodape {
+            flex-wrap: wrap;
+            padding: 25px 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            justify-content: start;
+
+            .info {
+                img {
+                    width: 200px;
+                }
+            }
+
+            .contato {
+                padding: 0px 40px;
+
+                .email {
                     img {
-                        width: 200px;
+                        width: 40px;
+                    }
+                    p {
+                            font-size: 20px;
                     }
                 }
 
-                .contato {
-                    padding: 0px 40px;
-
-                    .email {
-                        img {
-                            width: 50px;
-                        }
-
-                        .info {
-                            h2 {
-                                font-size: 20px;
-                            }
-                        }
+                .telefone {
+                    img {
+                        width: 40px;
                     }
 
-                    .telefone {
-                        img {
-                            width: 50px;
-                        }
-
-                        .info {
-                            h2 {
-                                font-size: 20px;
-                            }
-                        }
+                    p {
+                        font-size: 20px;
                     }
                 }
+                
             }
         }
     }
