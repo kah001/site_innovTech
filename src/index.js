@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.scss';
 import Navegacao from './routes';
 
-//importacoes swiper
+//importacoes do swiper para o carousel
 import 'swiper/css'
-import 'swiper/css/pagination'
-import 'swiper/css/navigation'
+import 'swiper/css/navigation' //modulos das setas
+import 'swiper/css/pagination' //importando as bolinhas
+import 'swiper/css/scrollbar'
 import 'swiper/swiper-bundle.css'
 
 
