@@ -11,13 +11,15 @@ export default function Cabecalho() {
 
     return (
         <div className='comp-cabecalho'>
-            <img src="/assets/images/innovTech.png" alt="" />
+            <div className='cabecalho'>
+                <img src="/assets/images/innovTech.png" alt="" />
 
-            <nav className={`nav ${isOpen ? 'open' : ''}`}>
-                <a><Link to='/'>INÍCIO</Link></a>
-                <a><Link to='/sobre'>SOBRE NÓS</Link></a>
-                <a><Link to='/areas'>ÁREAS DE ATUAÇÃO</Link></a>
-            </nav>
+                <nav className={`nav ${isOpen ? 'open' : ''}`}>
+                    <a><Link to='/'>INÍCIO</Link></a>
+                    <a><Link to='/sobre'>SOBRE NÓS</Link></a>
+                    <a><Link to='/areas'>ÁREAS DE ATUAÇÃO</Link></a>
+                </nav>
+            </div>
 
             <div className='menu-icon' onClick={toggleMenu}>
                 <div className={`menu ${isOpen ? 'toggle' : ''}`}></div>

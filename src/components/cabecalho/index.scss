@@ -1,53 +1,61 @@
 .comp-cabecalho {
     background-color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     
-    img {
-        width: 150px;
-        margin-left: 20px;
-    }
-
-    .nav {
+    .cabecalho {
         display: flex;
-        gap: 50px;
-    }
+        justify-content: space-evenly;
+        align-items: center;
 
-    a {
-        color: #fff;
-        font-size: 20px;
-        text-decoration: none;
+        img {
+            width: 150px;
+        }
+    
+        .nav {
+            display: flex;
+            gap: 30px;
+        }
+        a {
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+        }
     }
 }
 
 @media (max-width: 768px) {
     .comp-cabecalho {
-        .nav {
-            display: none;
-        }
-        .nav.open {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            position: fixed;
-            top: 0px;
-            right: 0px;
-            background-color: #C95624;
-            width: 50%;
-            height: 100%;
-            gap: 30px;
-            padding: 10px;
-            box-shadow: 5px 5px 35px 0px;
-            padding: 85px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
 
-            a {
-                padding: 10px;
+        .cabecalho {
+            .nav {
+                display: none;
             }
-            a:hover{
-                background-color: #e66f3c;
+            .nav.open {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                position: fixed;
+                top: 0px;
+                right: 0px;
+                background-color: #C95624;
+                width: 50%;
+                height: 100%;
+                gap: 30px;
+                padding: 10px;
+                box-shadow: 5px 5px 35px 0px;
+                padding: 85px 5px;
+    
+                a {
+                    padding: 10px;
+                }
+                a:hover{
+                    background-color: #e66f3c;
+                }
             }
         }
+        
         .menu-icon {
             cursor: pointer;
             padding: 10px;

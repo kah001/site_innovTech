@@ -1,0 +1,22 @@
+.pagina-nao-encontrado {
+    background-color: #f6a27c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    img {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 580px) {
+    .pagina-nao-encontrado {
+
+        img {
+            width: 400px;
+            height: 400px;
+        }
+    }
+}

@@ -1,120 +1,97 @@
 .comp-rodape {
     background-color: #000;
-    color: #fff;
+    padding-top: 15px;
 
-    .rodape {
+    .conteudo {
         display: flex;
-        padding: 50px 10px;
+        flex-wrap: wrap;
         justify-content: space-around;
 
-        .info {
+        .logo {
             img {
                 width: 200px;
-                margin: 15px;
             }
         }
 
         .paginas {
-            display: flex;
-            width: 80px;
-            flex-wrap: wrap;
+            h1 {
+                font-size: 25px;
+                color: #C95624;
+                margin: 10px 0px;
+            }
+            hr {
+                border-color: #C95624;
+                width: 100px;
+                margin-bottom: 15px;
+            }
 
-            a {
-                font-size: 20px;
-                color: #fff;
+            .no-link {
                 text-decoration: none;
-                padding: 5px;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 400;
+            }
+            h2 {
+                padding: 5px 0px;
             }
         }
 
         .contato {
+            h1 {
+                font-size: 25px;
+                color: #C95624;
+                margin: 10px 0px;
+            }
+            hr {
+                border-color: #C95624;
+                width: 100px;
+                margin-bottom: 15px;
+            }
+
             .telefone {
                 display: flex;
                 align-items: center;
+                gap: 10px;
 
                 img {
-                    width: 60px;
-                    margin: 10px;
+                    width: 50px;
+                    margin: 5px 0px;
+                }
+                p {
+                    color: #fff;
                 }
             }
 
             .email {
-                align-items: center;
                 display: flex;
+                align-items: center;
+                gap: 10px;
 
                 img {
-                    width: 60px;
-                    margin: 10px;
+                    width: 50px;
+                    margin: 5px 0px;
+                }
+                p {
+                    color: #fff;
                 }
             }
         }
     }
 
-    .final {
-        display: flex;
-        flex-direction: column;
-
-        p {
-            padding: 10px;
-        }
+    p {
+        color: #fff;
+        padding: 10px 20px;
     }
 }
 
 @media (max-width: 580px) {
     .comp-rodape {
-        .rodape {
-            .info {
-                img {
 
-                }
-            }
-
-            .paginas {
-
-            }
-        }
     }
 }
 
 @media (max-width: 768px) {
     .comp-rodape {
-        .rodape {
-            flex-wrap: wrap;
-            padding: 25px 10px;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            justify-content: start;
 
-            .info {
-                img {
-                    width: 200px;
-                }
-            }
-
-            .contato {
-                padding: 0px 40px;
-
-                .email {
-                    img {
-                        width: 40px;
-                    }
-                    p {
-                            font-size: 20px;
-                    }
-                }
-
-                .telefone {
-                    img {
-                        width: 40px;
-                    }
-
-                    p {
-                        font-size: 20px;
-                    }
-                }
-                
-            }
-        }
     }
 }

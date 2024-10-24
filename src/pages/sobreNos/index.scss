@@ -1,0 +1,59 @@
+.pagina-sobre-nos {
+    .sobre {
+        background-color: #000;
+        color: #fff;
+        padding: 15px;
+
+        .titulo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+
+            h1 {
+                text-align: center;
+                font-size: 35px;
+            }
+            hr {
+                width: 150px;
+                margin: 5px 0px;
+            }
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .equipe {
+        background-color: #C95624;
+        padding: 25px 0px;
+
+        .titulo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+
+            h1 {
+                text-align: center;
+                font-size: 35px;
+            }
+            hr {
+                width: 150px;
+                margin: 5px 0px;
+                border-color: #000;
+            }
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    
+}
+
+@media (max-width: 768px) {
+
+}
