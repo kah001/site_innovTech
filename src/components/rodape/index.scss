@@ -84,14 +84,18 @@
     }
 }
 
-@media (max-width: 580px) {
-    .comp-rodape {
-
-    }
-}
-
 @media (max-width: 768px) {
     .comp-rodape {
+        .conteudo {
+            flex-direction: column;
+        }
 
+        .paginas {
+            padding: 2px 20px;
+        }
+
+        .contato {  
+            padding: 2px 20px;
+        }
     }
 }

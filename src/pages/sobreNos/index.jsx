@@ -1,4 +1,5 @@
 import './index.scss'
+import { useState, useEffect } from 'react'
 import Cabecalho from '../../components/cabecalho'
 import Rodape from '../../components/rodape'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -12,6 +13,8 @@ export default function SobreNos() {
         { id: 4 }
     ]
 
+    const [slidesPorVez, setSlidesPorVez] = useState(2)
+
     return (
         <div className='pagina-sobre-nos'>
             <Cabecalho />
@@ -22,11 +25,13 @@ export default function SobreNos() {
                     <hr />
                 </div>
 
-                <p>A nossa empresa possui uma metodologia eficaz no desenvolvimento de plataformas web.</p>
-                <br />
-                <p>Logo após o planejamento, a nossa equipe dá forma ao que foi definido e acompanha todo o projeto até a finalização.</p>
-                <br />
-                <p>Criamos um site moderno, otimizado, responsivo e com uma ótima performance, isso tudo é possível graças aos nossos profissionais que possuem as habilidades técnicas necessárias para isso.</p>
+                <div className='conteudo'>
+                    <p>A nossa empresa possui uma metodologia eficaz no desenvolvimento de plataformas web.</p>
+                    <br />
+                    <p>Logo após o planejamento, a nossa equipe dá forma ao que foi definido e acompanha todo o projeto até a finalização.</p>
+                    <br />
+                    <p>Criamos um site moderno, otimizado, responsivo e com uma ótima performance, isso tudo é possível graças aos nossos profissionais que possuem as habilidades técnicas necessárias para isso.</p>
+                </div>
             </div>
 
             <div className='equipe'>
@@ -36,7 +41,7 @@ export default function SobreNos() {
                 </div>
 
                 <Swiper className='carrossel-equipe'
-                    slidesPerView={2}
+                    slidesPerView={slidesPorVez}
                     pagination={{ clickable: true }}
                     navigation
                     modules={{ Autoplay, Pagination, Navigation }}

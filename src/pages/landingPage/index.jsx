@@ -5,7 +5,7 @@ import './index.scss'
 
 export default function LandingPage() {
     return (
-        <div className='pagina-landingpage'>
+        <div className='pagina-landing-page'>
             <Cabecalho />
 
             <main>
