@@ -17,7 +17,6 @@ export default function LandingPage() {
                     </div>
 
                     <img src="/assets/images/inicio.jpg" alt="" />
-
                 </section>
 
 

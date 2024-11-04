@@ -5,15 +5,34 @@ import Rodape from '../../components/rodape'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 
+import kah from '../../images/kah.jpg'
+import jenni from '../../images/jenni.jpg'
+import felps from '../../images/felps.jpg'
+import mario from '../../images/mario.jpg'
+
+
 export default function SobreNos() {
     const imagens = [
-        { id: 1 },
-        { id: 2 },
-        { id: 3 },
-        { id: 4 }
+        { id: 1, img: jenni },
+        { id: 2, img: kah },
+        { id: 3, img: felps },
+        { id: 4, img: mario }
     ]
 
     const [slidesPorVez, setSlidesPorVez] = useState(2)
+
+    useEffect(() => {
+        function qtdSlides() {
+            let tela = window.innerWidth
+            if (tela >= 720) {
+                setSlidesPorVez(2)
+            } else {
+                setSlidesPorVez(1)
+            }
+        }
+
+        qtdSlides()
+    }, [slidesPorVez])
 
     return (
         <div className='pagina-sobre-nos'>
@@ -52,7 +71,7 @@ export default function SobreNos() {
                     loop={true}
                 >
                     {imagens.map(item => (
-                        <SwiperSlide key={item.id}>
+                        <SwiperSlide className='item' key={item.id}>
                             <img src={item.img} alt="" />
                         </SwiperSlide>
                     ))}

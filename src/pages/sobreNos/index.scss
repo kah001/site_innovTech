@@ -53,6 +53,21 @@
                 border-color: #000;
             }
         }
+
+        .carrossel-equipe {
+            width: 600px;
+
+            .item {
+                display: flex;
+                justify-content: center;
+                gap: 0px;
+
+                img {
+                    width: 250px;
+                    height: 310px;
+                }
+            }
+        }
     }
 }
 
