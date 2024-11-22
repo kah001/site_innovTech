@@ -1,4 +1,6 @@
 .pagina-sobre-nos {
+    font-family: Arial, Helvetica, sans-serif;
+    
     .sobre {
         background-color: #000;
         color: #fff;
@@ -35,6 +37,17 @@
         background-color: #C95624;
         padding: 25px 0px;
 
+        .swiper-pagination-bullet {
+            opacity: 1;
+            background-color: #919191bb;
+            padding: 6px;
+
+            margin-top: 55px;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: #000;
+        }
+
         .titulo {
             display: flex;
             flex-direction: column;
@@ -55,7 +68,7 @@
         }
 
         .carrossel-equipe {
-            width: 600px;
+            width: 45%;
 
             .item {
                 display: flex;
@@ -64,7 +77,6 @@
 
                 img {
                     width: 250px;
-                    height: 310px;
                 }
             }
         }

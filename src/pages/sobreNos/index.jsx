@@ -5,10 +5,10 @@ import Rodape from '../../components/rodape'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Pagination, Navigation } from 'swiper/modules'
 
-import kah from '../../images/kah.jpg'
-import jenni from '../../images/jenni.jpg'
-import felps from '../../images/felps.jpg'
-import mario from '../../images/mario.jpg'
+import kah from '../../images/kah.png'
+import jenni from '../../images/jenni.png'
+import felps from '../../images/felps.png'
+import mario from '../../images/mario.png'
 
 
 export default function SobreNos() {
@@ -24,7 +24,7 @@ export default function SobreNos() {
     useEffect(() => {
         function qtdSlides() {
             let tela = window.innerWidth
-            if (tela >= 720) {
+            if (tela >= 760) {
                 setSlidesPorVez(2)
             } else {
                 setSlidesPorVez(1)
@@ -32,6 +32,12 @@ export default function SobreNos() {
         }
 
         qtdSlides()
+
+        window.addEventListener("resize", qtdSlides)
+
+        return () => {
+            window.removeEventListener("resize", qtdSlides)
+        }
     }, [slidesPorVez])
 
     return (
@@ -62,8 +68,8 @@ export default function SobreNos() {
                 <Swiper className='carrossel-equipe'
                     slidesPerView={slidesPorVez}
                     pagination={{ clickable: true }}
-                    navigation
-                    modules={{ Autoplay, Pagination, Navigation }}
+                    spaceBetween={0}
+                    modules={[ Autoplay, Pagination, Navigation ]}
                     autoplay={{
                         delay: 2500,
                         disableOnInteraction: false
